@@ -31,9 +31,9 @@ const Symbol: React.FC = () => {
             <div className="max-w-2xl mx-auto">
               <ul className="list-disc pl-5">
                 <li className="mt-2">Current Price: {utils.formatPrice(coin.current_price)}</li>
-                <li className="mt-2">All time high price: {utils.formatPrice(coin.high_24h)}</li>
-                <li className="mt-2">Market Cap: {utils.formatPrice(coin.low_24h)}</li>
-                <li className="mt-2">Market Cap Rank: {utils.formatPrice(coin.low_24h)}</li>
+                <li className="mt-2">All time high price: {utils.formatPrice(coin.ath)}</li>
+                <li className="mt-2">Market Cap: {utils.formatPrice(coin.market_cap)}</li>
+                <li className="mt-2">Market Cap Rank: {coin.market_cap_rank}</li>
               </ul>
               <Link
                 href="/"
